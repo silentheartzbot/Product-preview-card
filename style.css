@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+article {
+  max-width: 35rem;
+  display: flex;
+}
+
+picture,
+.product-info {
+  flex: 1;
+}
+
+picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.product-info {
+  padding: 1.8rem;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.product-type {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-block-end: 0.7rem;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  margin-block-end: 1.5rem;
+}
+
+h1 + p {
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+  margin-block-end: 1.5rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-block-end: 1.5rem;
+}
+
+.price-container span {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+del {
+  color: hsl(228, 12%, 48%);
+  margin-inline-start: 0.9rem;
+  font-size: 0.8rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  padding: 0.7rem 3rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(158, 42%, 18%);
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  article {
+    display: flex;
+    flex-direction: column;
+    max-width: 22rem;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
+
+  h1 + p {
+    font-size: 0.87rem;
+    font-weight: 500;
+  }
+
+  picture img {
+    display: block;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .product-info {
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .price-container span {
+    font-size: 1.8rem;
+  }
+
+  del {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 1rem 6rem;
+  }
+}
